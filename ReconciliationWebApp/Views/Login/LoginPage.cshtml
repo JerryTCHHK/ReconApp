@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "LoginPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body class="black-background">
+
+<div class="container justify-content-center  vertical-center">
+
+    <form class="shadow-sm pt-3 pl-3 pr-3 pb-0 mb-0 bg-white rounded" autocomplete="off">
+
+        <div class="form-group">
+        
+            <h3 class="text-center notSelected">Reconciliation Web App</h3>
+
+        </div>
+
+        <div class="form-group">
+
+            <label class="notSelected" for="usernameEmail">Username/Email:</label>
+            <input type="text" class="form-control" id="usernameEmail" placeholder="Username/Email"/>
+
+        </div>
+
+        <div class="form-group">
+
+            <label class="notSelected" for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password"/>
+
+        </div>
+
+        <div class="form-group form-check">
+
+            <label class="form-check-label small notSelected">
+
+                <input class="form-check-input" type="checkbox" />Remember me
+
+            </label>
+
+
+        </div>
+        
+        <div class="form-group">
+            
+             <button type="submit" class="btn btn-primary btn-block">Login</button>
+        
+        </div>
+
+        <div class="form-group pb-5">
+            
+            <label class="small notSelected float-right" for="forgetPassword"><a href="#">Forget password?</a></label>
+
+        </div>
+
+        <div class="form-group text-center mb-0 clearfix small" >
+
+            <label class="notSelected" for="signUp">Create a New Account?<a href="@Url.Action("SignUpPage","SignUp")">Sign up</a></label>
+
+        </div>
+
+
+    </form>
+
+    <div class="text-center small text-light">
+        <label class="notSelected" id="CopyRight"></label>
+    </div>
+    
+
+</div>
+    
+
+</body>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Error";
+
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+    
+}
+
+@using ReconciliationWebApp.Enums
+@{
+    
+    string  errorMessage = ViewData[StatusKeys.ERROR.ToString()].ToString();
+}
+
+<body class="black-background">
+
+    <div class="container justify-content-center vertical-center">
+
+        <div class="shadow-sm pt-3 pl-3 pr-3 pb-3 mb-1 bg-white rounded justify-content-center" id="error-container">
+            @errorMessage
+        </div>
+
+    </div>
+
+</body>

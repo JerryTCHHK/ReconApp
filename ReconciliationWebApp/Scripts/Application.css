@@ -1,0 +1,157 @@
+﻿.black-background{
+
+    background-color:#364051;
+
+}
+
+.notSelected {
+
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+
+
+}
+
+@media screen and (max-width: 767px){
+
+     .vertical-center
+    {
+       margin-top:1%;
+            
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+
+     .vertical-center {
+
+       margin-top:1%;
+       width:55%;
+      
+
+    }
+
+}
+
+
+@media screen and (min-width: 992px){
+
+     .vertical-center
+    {
+        margin-top:3%;
+        width:40%;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+
+    .vertical-center
+    {
+      margin-top: 3%;
+      width:33%;
+    }
+
+}
+
+@media screen and (min-width: 1500px){
+
+     .vertical-center
+    {
+      margin-top: 5%;
+      width:30%;
+    }
+
+
+}
+
+@media screen and (min-width: 1700px){
+
+     .vertical-center
+    {
+      margin-top: 5%;
+      width:27%;
+    }
+
+
+}
+
+@media screen and (min-width : 1800px){
+
+      .vertical-center
+    {
+      margin-top: 5%;
+      width:25%;
+    }
+
+}
+
+
+.inner-addon{
+
+    position: relative; 
+}
+
+.inner-addon .glyphicon{
+
+    position : absolute;
+    
+    padding-top:43px;
+    padding-right:10px;
+    padding-bottom:0px;
+    pointer-events: none; 
+
+}
+
+.left-addon .glyphicon{
+
+    left: 0px;
+
+}
+
+.right-addon .glyphicon{
+
+    right: 0px;
+
+}
+
+.left-addon input  { 
+    
+    padding-left:  30px; 
+
+}
+.right-addon input { 
+    
+    padding-right: 30px;
+
+}
+
+
+.error-input-border {
+
+    border-color: #f23939; 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.success-input-border {
+
+    border-color: #1acf3f;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
+
+}
+
+.closeSize {
+
+    font-size:16px;
+}
+
+
+.borderless td, .borderless th {
+    border: none;
+}

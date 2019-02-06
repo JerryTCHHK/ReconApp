@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Register Success";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using ReconciliationWebApp.Enums
+@using ReconciliationWebApp.Models
+@{
+    
+    var modelInfo = (RegisterModel)ViewData[StatusKeys.SUCCESS.ToString()];
+
+    string hidePassword = "";
+    
+    for ( int i = 0 ; i < modelInfo.newPassword.Length ; i++){
+
+        hidePassword = hidePassword + "*";
+        
+    }
+}
+
+<body class="black-background">
+
+    <div class="container justify-content-center vertical-center">
+
+        <div class="shadow-sm pt-3 pl-3 pr-3 pb-3 mb-1 bg-white rounded justify-content-center">
+
+            <h3 class="text-center pb-3">Registration Success!</h3>
+
+            <table class="table">
+                <tr>
+                    <td>Username:</td>
+                    <td>@modelInfo.newUserName</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>@modelInfo.newEmail</td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>@hidePassword</td>
+
+                </tr>
+            </table>
+            <p>The above user account is successfully registered.</p>
+                
+            <p>Click the following button to proceed to Login Page</p>
+
+            <button class="btn btn-success btn-block" onclick="location.href='@Url.Action("LoginPage", "Login")'">Proceed to Login</button>
+
+        </div>
+
+    </div>
+
+        
+
+</body>
